@@ -146,7 +146,8 @@
 
             const futureValue = principal * Math.pow(1 + growthRate / 100, years) + annualAddition * ((Math.pow(1 + growthRate / 100, years) - 1) / (growthRate / 100));
 
-            futureValueDisplay.textContent = futureValue.toFixed(2);
+            if(futureValue)
+                futureValueDisplay.textContent = futureValue.toFixed(2);
         }
 
         function openPrivacyPolicy() {
